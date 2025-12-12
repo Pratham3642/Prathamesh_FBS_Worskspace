@@ -87,3 +87,35 @@ void main()
         printf("The number is not a palindrome.\n");
     }
 }
+
+// print numbers from 1 to 100 using for loop
+void main()
+{
+    for (int i = 1; i <= 100; i++)
+    {
+        printf("%d\n", i);
+    }
+}
+
+// calculate sum of digits of a number using for loop
+void main()
+{
+    int sum = 0, digit;
+    for (int n = 12345; n > 0; n = n / 10)
+    {
+        digit = n % 10;
+        sum = sum + digit;
+    }
+    printf("Sum of digits: %d\n", sum);
+}
+
+// print factorial of a number using for loop
+void main()
+{
+    int n = 5, fact = 1;
+    for (int i = 1; i <= n; i++)
+    {
+        fact = fact * i;
+    }
+    printf(" %d", fact);
+}
