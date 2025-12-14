@@ -69,6 +69,8 @@ void main()
 // check if a number is Armstrong or not
 void main()
 {
+    // Armstrong number = sum of its own digits each raised to the power of number of digits
+
     int n, armst = 0, temp;
     printf("Enter a number: ");
     scanf("%d", &n);
