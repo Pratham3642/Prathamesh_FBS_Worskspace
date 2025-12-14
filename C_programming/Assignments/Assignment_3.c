@@ -92,6 +92,8 @@ void main()
 // check if a number is Perfect or not
 void main()
 {
+    // perfect number = sum its proper divisors equal the number itself
+    // example 6 = 1 + 2 + 3
     int n, sum = 0, i = 1;
     printf("Enter a number: ");
     scanf("%d", &n);
@@ -130,7 +132,9 @@ void main()
 // check if a number is Strong or not
 void main()
 {
-    int n, isStrong = 1, sum = 0, factorial;
+    // strong number = sum of factorial of each digit equal the number itself
+    // example 145 = 1! + 4! + 5! = 145
+    int n, sum = 0, factorial;
     printf("Enter a number: ");
     scanf("%d", &n);
     int temp = n;
@@ -160,6 +164,8 @@ void main()
 // check if a number is a palindrome or not
 void main()
 {
+    // reads same backward as forward
+    // example 121, 1331
     int n, reverse = 0, last_digit;
     printf("Enter a number: ");
     scanf("%d", &n);
