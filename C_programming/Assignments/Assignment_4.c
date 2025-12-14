@@ -36,7 +36,7 @@ int main()
     }
 }
 
-// Print prime numbers from 1 to n using while loop
+// Print prime numbers from 1 to n
 void main()
 {
     int i, flag, num = 2, n;
@@ -63,7 +63,7 @@ void main()
     }
 }
 
-// Print perfect numbers in the given range 1 to n.
+// Print perfect numbers in the given range 1 to n
 int main()
 {
     // perfect number = sum its proper divisors equal the number itself
@@ -91,7 +91,8 @@ int main()
 // Print Strong numbers in the given range 1 to n.
 int main()
 {
-    // Sum of factorials of its digits = the number itself
+    // What is Strong Number?
+    //  Sum of factorials of its digits = the number itself
 
     int n, fact, sum, temp, i, digit;
     printf("Enter a range: ");
