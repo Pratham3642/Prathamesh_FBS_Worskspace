@@ -34,6 +34,20 @@ void main()
     }
 }
 
+// Check whether a year is leap year or not
+void main()
+{
+    int year = 2020;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+        printf("Leap Year");
+    }
+    else
+    {
+        printf("Not a Leap Year");
+    }
+}
+
 // check whether a character is a vowel or consonant
 void main()
 {
