@@ -1,16 +1,13 @@
 #include <stdio.h>
 
-/* Even or Odd */
-int isEven()
+int isEven(int n)
 {
-    int n = 9;
     return n % 2 == 0;
 }
 
-/* Palindrome */
-int isPalindrome()
+int isPalindrome(int n)
 {
-    int n = 121, temp = n, rev = 0;
+    int temp = n, rev = 0;
     while (temp > 0)
     {
         rev = rev * 10 + temp % 10;
@@ -19,23 +16,21 @@ int isPalindrome()
     return rev == n;
 }
 
-/* Vowel or Consonant */
-int isVowel()
+int isVowel(char ch)
 {
-    char ch = 'E';
     return (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
             ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U');
 }
 
 int main()
 {
-    printf(isEven() ? "Even\n" : "Odd\n");
+    printf(isEven(9) ? "Even\n" : "Odd\n");
     printf("-------------------------\n");
 
-    printf(isPalindrome() ? "Palindrome\n" : "Not Palindrome\n");
+    printf(isPalindrome(121) ? "Palindrome\n" : "Not Palindrome\n");
     printf("-------------------------\n");
 
-    printf(isVowel() ? "Vowel\n" : "Consonant\n");
+    printf(isVowel('E') ? "Vowel\n" : "Consonant\n");
 
     return 0;
 }

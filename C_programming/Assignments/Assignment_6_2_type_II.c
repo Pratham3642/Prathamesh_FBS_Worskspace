@@ -1,33 +1,22 @@
 #include <stdio.h>
 
-/* --------------------Argument, No return----------------------- */
+/*------------------------- No argument, Return value ------------------------*/
 
-void checkTriangle(int a, int b, int c)
+int greatest()
 {
-    if (a == b && b == c)
-        printf("Equilateral Triangle\n");
-    else if (a == b || b == c || c == a)
-        printf("Isosceles Triangle\n");
-    else
-        printf("Scalene Triangle\n");
-}
+    int a = 9, b = 8, c = 4;
 
-void checkDivisibility(int num)
-{
-    if (num % 3 == 0 && num % 5 == 0)
-        printf("Divisible by both 3 and 5\n");
-    else if (num % 3 == 0)
-        printf("Divisible by 3\n");
-    else if (num % 5 == 0)
-        printf("Divisible by 5\n");
+    if (a > b && a > c)
+        return a;
+    else if (b > c)
+        return b;
     else
-        printf("Not divisible by 3 or 5\n");
+        return c;
 }
 
 int main()
 {
-    checkTriangle(3, 4, 3);
-    printf("-----------------------------------\n");
-    checkDivisibility(15);
+    int g = greatest();
+    printf("Greatest = %d\n", g);
     return 0;
 }

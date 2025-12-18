@@ -1,34 +1,41 @@
 #include <stdio.h>
-/* ------------------------- 3. No argument, return value --------------------- */
 
-// check whether a three-digit number is a palindrome
-int isPalindrome()
-{
-    int num = 121, reverse_num, a, b, c;
-    printf("Number = %d\n", num);
-    a = num % 10;        // last digit
-    b = (num / 10) % 10; // middle digit
-    c = num / 100;       // first digit
-    reverse_num = a * 100 + b * 10 + c;
+/* ---------------------- 3. Argument, no return --------------------- */
 
-    if (num == reverse_num)
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
-}
+// declaration
+void checkVowels(char);
+void checkCase(char);
 
 void main()
 {
-    if (isPalindrome())
+    checkVowels('L');
+    printf("\n");
+    printf("---------------------------\n");
+    checkCase('b');
+}
+// check whether a character is a vowel or consonant
+void checkVowels(char ch)
+{
+    if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+        ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
     {
-        printf("Palindrome number");
+        printf("%c is a vowel", ch);
     }
     else
     {
-        printf("Is not a palindrome number");
+        printf("%c is a consonant", ch);
+    }
+}
+
+// check whether a given character is uppercase or lowercase
+void checkCase(char ch)
+{
+    if (ch >= 'a' && ch <= 'z')
+    {
+        printf("Lowercase Letter");
+    }
+    else
+    {
+        printf("Uppercase Letter");
     }
 }

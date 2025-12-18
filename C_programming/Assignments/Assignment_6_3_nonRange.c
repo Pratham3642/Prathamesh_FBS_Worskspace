@@ -23,6 +23,21 @@ void checkPrime()
         printf("Not Prime Number\n");
 }
 
+/* No parameter, Return value */
+int isPerfect()
+{
+    int n = 6, sum = 0, i = 1;
+
+    while (i < n)
+    {
+        if (n % i == 0)
+            sum += i;
+        i++;
+    }
+
+    return (sum == n);
+}
+
 /* With parameter, No return */
 void checkArmstrong(int n)
 {
@@ -39,21 +54,6 @@ void checkArmstrong(int n)
         printf("Armstrong Number\n");
     else
         printf("Not Armstrong Number\n");
-}
-
-/* No parameter, Return value */
-int isPerfect()
-{
-    int n = 6, sum = 0, i = 1;
-
-    while (i < n)
-    {
-        if (n % i == 0)
-            sum += i;
-        i++;
-    }
-
-    return (sum == n);
 }
 
 /* With parameter, Return value */
