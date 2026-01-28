@@ -1,0 +1,11 @@
+18 "Virat Kohli" 12500 5 260
+45 "Rohit Sharma" 9800 8 230
+7 "MS Dhoni" 10500 1 350
+10 "Sachin Tendulkar" 18426 154 463
+12 "Yuvraj Singh" 8701 111 304
+33 "Hardik Pandya" 3500 65 120
+93 "Jasprit Bumrah" 150 120 72
+99 "Ravindra Jadeja" 2600 190 170
+77 "Shubman Gill" 4200 5 110
+55 "KL Rahul" 5000 2 135
+2 "Kapil Dev" 3783 253 225
