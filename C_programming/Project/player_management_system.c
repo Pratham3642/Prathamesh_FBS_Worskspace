@@ -14,7 +14,7 @@ struct Player
     int matches;
 };
 
-/* ================ PROTOTYPES =============== */
+/* ================ DECLARATION =============== */
 void addPlayer();
 void displayPlayers();
 void updatePlayer();
@@ -284,6 +284,14 @@ void searchByJersey()
         printf("Player not found\n");
 }
 
+/* ================= UTIL ================= */
+void toLowerCase(char str[])
+{
+    for (int i = 0; str[i]; i++)
+        if (str[i] >= 'A' && str[i] <= 'Z')
+            str[i] += 32;
+}
+
 /* ================= SEARCH BY NAME ================= */
 void searchByName()
 {
@@ -398,12 +406,4 @@ void top3Players()
     printf("\nTop 3 by Wickets:\n");
     for (int i = 0; i < 3 && i < n; i++)
         printf("%s - %d Wickets\n", p[i].name, p[i].wickets);
-}
-
-/* ================= UTIL ================= */
-void toLowerCase(char str[])
-{
-    for (int i = 0; str[i]; i++)
-        if (str[i] >= 'A' && str[i] <= 'Z')
-            str[i] += 32;
 }

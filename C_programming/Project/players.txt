@@ -8,3 +8,4 @@
 77 "Shubman Gill" 4200 5 110
 55 "KL Rahul" 5000 2 135
 2 "Kapil Dev" 3783 253 225
+13 "ranjit " 45 63 66
